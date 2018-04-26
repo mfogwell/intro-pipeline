@@ -24,6 +24,9 @@ pipeline {
     MY_NAME = 'Michelle'
     TEST_USER = credentials('test-user')
   }
+  options {
+    timeout(time: 15, unit: 'SECONDS')
+  }
   parameters {
     string(name: 'Name', defaultValue: 'whoever you are', description: 'Who should I say hi to?')
   }
