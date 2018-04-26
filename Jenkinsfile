@@ -8,6 +8,6 @@ pipeline {
     }
   }
   environment {
-    MY_NAME = 'mary'
+    MY_NAME = 'Michelle'
   }
 }
