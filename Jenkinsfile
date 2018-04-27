@@ -4,7 +4,7 @@ pipeline {
     stage('Say Hello') {
       steps {
         echo "Hello ${params.Name}!"
-        echo 'Jenkins Test 1'
+        echo 'Jenkins Test 2'
         echo "${TEST_USER_USR}"
         echo "${TEST_USER_PSW}"
       }
