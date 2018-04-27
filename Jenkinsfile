@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Say Hello') {
       steps {
-        echo 'Hello ${param.name}!'
+        echo "Hello ${param.name}!"
         echo 'Jenkins Test 6'
         echo "${TEST_USER_USR}"
         echo "${TEST_USER_PSW}"
