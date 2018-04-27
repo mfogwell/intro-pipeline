@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Say Hello') {
       steps {
-        echo "Hello ml"
+        echo "Hello ${params.name}!"
         echo 'Jenkins Test 6'
         echo "${TEST_USER_USR}"
         echo "${TEST_USER_PSW}"
@@ -19,6 +19,8 @@ pipeline {
     MY_NAME = 'Mary'
     TEST_USER = credentials('test-user')
   }
-
+  parameters {
+    string(name: 'Name', defaultValue: 'why', description: 'Who should I say hi to?')
+  }
 
 }
