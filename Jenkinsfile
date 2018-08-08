@@ -2,6 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Say Hello') {
+      agent any
       steps {
         echo "Hello ${params.name}!"
         echo 'Jenkins Test 6'
@@ -10,6 +11,7 @@ pipeline {
       }
     }
     stage('Say Goodbye') {
+      agent any
       steps {
         echo 'goodbye Michelle'
       }
