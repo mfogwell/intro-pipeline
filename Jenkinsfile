@@ -22,5 +22,4 @@ pipeline {
   parameters {
     string(name: 'Name', defaultValue: 'why', description: 'Who should I say hi to?')
   }
-
 }
